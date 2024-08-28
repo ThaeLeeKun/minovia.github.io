@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url("lol.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+section {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    width: 100%;
+    height: 100vh; /* Usa la altura completa de la ventana */
+    overflow-y: auto; /* Permite el desplazamiento vertical si es necesario */
+    padding: 20px; /* Agrega padding para espacio interno */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+section img {
+    width: 100%; /* Ajusta el tamaño de las imágenes para que se adapten al contenedor */
+    max-width: 300px; /* Limita el tamaño máximo de las imágenes */
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    opacity: 1; /* Ajusta la opacidad al pasar el ratón */
+    filter: contrast(100%);
+}
+
+button {
+    background-color: rgba(241, 241, 241, 0.5); /* Ajusta los valores RGB según tus preferencias y el último valor (0.5) controla la opacidad del fondo. */
+    opacity: 0.7; /* Ajusta el valor según sea necesario. 1 es completamente opaco, 0 es completamente transparente. */
+    color: #000; /* Ajusta el color del texto según tus preferencias. */
+    padding: 10px 20px; /* Ajusta el espaciado según sea necesario. */
+    border: none; /* Puedes ajustar o agregar estilos de borde según tus necesidades. */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón. */
+    font-size: 16px; /* Ajusta el tamaño de la fuente según sea necesario */
+}

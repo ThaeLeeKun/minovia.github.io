@@ -1,0 +1,41 @@
+header{
+    background: center bottom no-repeat;
+  
+}
+
+/* Estilo para las imágenes con zoom al pasar el ratón sobre ellas */
+.image-zoom {
+    transition: transform 0.4s; /* Agrega una transición suave para la transformación */
+}
+
+/* Aplica la transformación al pasar el ratón sobre la imagen */
+.image-zoom:hover {
+    transform: scale(0.5); /* Aumenta el tamaño de la imagen al 110% del tamaño original */
+}
+
+
+.iconolol{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    opacity: 0.5;
+
+}
+@media only screen and (max-width: 786px){
+    table {
+        width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+    }
+
+    td {
+        display: block; /* Hace que las celdas se apilen verticalmente */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho de la celda */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+}
